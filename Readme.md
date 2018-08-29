@@ -10,7 +10,7 @@ To follow take for example to edit small watch:<br>
 overall - this is the main wrapper to set the background,border,shadow of the watch<br>
 Follow through the branch which all give a self-descriptive name or give a description and sample line to access the element in your watch 
 
-[check tree.json](https://github.com/njaneambrose/AnalogClock/tree.json)
+[check tree.json](https://github.com/njaneambrose/AnalogClock/blob/master/tree.json)
 ##  Installation
      $ bower install analogclock
      
@@ -65,9 +65,9 @@ Below are the defaults:
        inner_major_type: 'sticks'
         }
       }
-Check an example [here](https://github.com/njaneambrose/AnalogClock/VisualTests.html)
+Check an example [here](https://github.com/njaneambrose/AnalogClock/blob/master/VisualTests.html)
 
-If you use logo_text the logo may not be centrally placed, follow your watch branch in [tree.json](https://github.com/njaneambrose/AnalogClock/tree.json) to see a way to edit it's position
+If you use logo_text the logo may not be centrally placed, follow your watch branch in [tree.json](https://github.com/njaneambrose/AnalogClock/blob/master/tree.json) to see a way to edit it's position
 
 ## Example
      <script src="jquery.js"></script>
