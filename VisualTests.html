@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+    <link rel="stylesheet" href="lib/analogclock.css">
+    <style>
+        .col-md-6{width: 50%;float: left;}
+        .col-md-8{width: 60%;float: left;}
+        .col-md-4{width: 40%;float: left}
+        .out-border{border: 2px solid #aaaaaa}
+        .text-center{text-align: center}
+        .pager{list-style: none;text-align: center}
+        .offset-2{margin-left: 20%}
+        .col-md-10{width: 100%;float: left}
+        h3, .pager, p{font-family: "Segoe UI", sans-serif}
+        #test-3{margin-top: 20px}
+        #x-watch{background:#000000}
+        #test-3{margin-top: 20px}
+        #test-2 #medium-watch{margin-top: 50px;background: white}
+        #test-10 #x-watch{border-color: transparent;background: transparent;}
+        #test-6 #medium-watch{background: #000000}
+    </style>
+</head>
+<body>
+<h3 class="text-center">analogClock VisualTest(samples) powered by (x-tended version)</h3>
+  <p class="lead text-center">Pick one or two for your website or website cover and make it stand out from the rest</p>
+ <ul class="pager">
+     <li><a href="Readme.md">Read me</a></li>
+ </ul>
+<div class="watch col-md-6"></div>
+<div id="test-2" class="col-md-6"></div>
+<div id="test-3" class="col-md-4"></div>
+<div id="test-4" class="col-md-8"></div>
+<div id="test-5" class="col-md-6"></div>
+<div id="test-6" class="col-md-6"></div>
+<div id="test-7" class="col-md-6"></div>
+<div id="test-8" class="col-md-6"></div>
+<div id="test-9" class="col-md-6"></div>
+<div id="test-10" class="col-md-8 offset-2"></div>
+</body>
+<script src="external/jquery-2.2.4.min.js"></script>
+<script src="lib/analogclock.min.js"></script>
+<script type="text/javascript">
+  $(".watch").analogClock({
+      watch: 'extend',
+      effect: 'flow',
+      logo: true,
+      extended:{
+           inner_major_type: 'number'
+      }
+      });
+  $("#test-2").analogClock({logo: true});
+  $("#test-3").analogClock({
+      watch: 'small',
+      logo: true
+  });
+  $("#test-4").analogClock({
+      watch: 'large',
+      GMT: true,
+      GMT_offset: -10,
+      logo: true
+  });
+  $("#test-5").analogClock({
+      watch: 'extend',
+      extended:{
+          inner_major_type: 'sticks'
+      }
+  });
+  $("#test-6").analogClock({
+      major: false,
+      minor: false
+  });
+  $("#test-7").analogClock({
+      watch: 'extend',
+      extended:{
+          inner_major_type: 'sticks',
+          inner_minor: false
+      }
+  });
+  $("#test-8").analogClock({
+      watch: 'extend',
+      extended:{
+          inner_major_type: 'number',
+          inner_minor: false
+      }
+  });
+  $("#test-9").analogClock({
+      minor: false
+  });
+  $("#test-10").analogClock({
+      watch: 'extend',
+      logo: true,
+      logo_text: 'LOGO',
+      extended:{
+          x_size: 'large',
+          inner_major_type: 'number'
+      }
+  });
+</script>
+</html>

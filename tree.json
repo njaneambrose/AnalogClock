@@ -1,0 +1,104 @@
+{
+  "watches":[
+    {
+      "type": "small",
+      "description": "The smallest watch in the plugin",
+      "overall": "#small-watch",
+      "second-hand": "#small-watch #ss-hand",
+      "minute-hand": "#small-watch #sm-hand",
+      "hour-hand": "#small-watch #sh-hand",
+      "logo-in-watch": "#small-watch .s-logo",
+      "centered-circle-in-watch": "#small-watch .s-ball",
+      "access-all-inner-values": "#small-watch .s-inner-s",
+      "access-specific": "#small-watch (.s-s-1 to .s-s-12) depending on the value you want edit",
+      "specific-specific":[
+        {
+          "description": "the major values eg: 3,6,9 and 12",
+          "access": "#small-watch .major"
+        },
+        {
+          "description": "the other values apart from 3,6,9 and 12",
+          "access": "#small-watch .minor"
+        }
+      ]
+    },
+    {
+      "type": "medium",
+      "description": "The default watch in the plugin",
+      "overall": "#medium-watch",
+      "second-hand": "#medium-watch #ms-hand",
+      "minute-hand": "#medium-watch #mm-hand",
+      "hour-hand": "#medium-watch #mh-hand",
+      "logo-in-watch": "#medium-watch .m-logo",
+      "centered-circle-in-watch": "#medium-watch .m-ball",
+      "access-all-inner-values": "#medium-watch .m-inner-s",
+      "access-specific": "#small-watch (.m-s-1 to .m-s-12) depending on the value you want to edit",
+      "specific-specific":[
+        {
+          "description": "the major values eg: 3,6,9 and 12",
+          "access": "#medium-watch .major"
+        },
+        {
+          "description": "the other values apart from 3,6,9 and 12",
+          "access": "#medium-watch .minor"
+        }
+      ]
+    },
+    {
+      "type": "large",
+      "description": "The largest watch in the plugin",
+      "overall": "#large-watch",
+      "second-hand": "#large-watch #ls-hand",
+      "minute-hand": "#large-watch #lm-hand",
+      "hour-hand": "#large-watch #lh-hand",
+      "logo-in-watch": "#large-watch .l-logo",
+      "centered-circle-in-watch": "#large-watch .l-ball",
+      "access-all-inner-values": "#large-watch .l-inner-s",
+      "access-specific-inner-value": "#large-watch (.l-s-1 to .l-s-12) depending on the value you want to edit",
+      "specific-specific":[
+        {
+          "description": "the major values eg: 3,6,9 and 12",
+          "access": "#large-watch .major"
+        },
+        {
+          "description": "the other values apart from 3,6,9 and 12",
+          "access": "#large-watch .minor"
+        }
+      ]
+    },
+    {
+      "type": "extend",
+      "description": "The watch with all values inside the watch unlike outside with the rest",
+      "overall": "#x-watch",
+      "second-hand": "#x-watch #second-hand",
+      "minute-hand": "#x-watch #minute-hand",
+      "hour-hand": "#x-watch #hour-hand",
+      "sticks": [
+        {
+          "description": "cover all the minor values except at multiples of 5 and 0 goes minute by minute",
+          "access-all": "#x-watch .inner-minor",
+          "access-specific": "#x-watch (.m-x), where x is the minute of the stick you want to access"
+        },
+        {
+          "description": "cover all the major values multiples of 5(5,10,15,...) or 0 for 60",
+          "access-all": "#x-watch .inner-major",
+          "access-specific": "#x-watch (.m-x), where x is the minute of the stick you want to access"
+        },
+        {
+          "description": "This is the stick you see behind a number if you are using numbers as your inner symbols",
+          "access-all": "#x-watch .major-stick",
+          "access-specific": "#x-watch (.s-1 to .s-12)"
+        }
+      ],
+      "numbers":[
+        {
+          "description": "This is the numbers in the watch",
+          "access-all": "#x-watch .inner-t-major",
+          "access-specific": "#x-watch (.t-1 to .t-12)"
+        }
+      ],
+      "logo-in-watch": "#x-watch #x-logo",
+      "centered-circle-in-watch": "#x-watch .x-ball"
+    }
+  ]
+}
