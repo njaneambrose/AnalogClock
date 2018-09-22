@@ -2,7 +2,7 @@
   "name": "analogclock",
   "description": "A simple plugin to develop analog watches for webpages",
   "version": "1.0.0",
-    "keywords": [
+  "keywords": [
     "analogClock",
     "anlogWatch",
     "clock",
@@ -11,26 +11,30 @@
     "clock",
     "cross-browser"
   ],
-    "homepage": "https://github.com/njaneambrose/AnalogClock",
-    "author":{
-        "name": "Ambrose Njane",
-        "email": "njaneambrose@gmail.com"
-    },
+  "homepage": "https://github.com/njaneambrose/AnalogClock",
+  "author": "Ambrose Njane <njaneambrose@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/njaneambrose/AnalogClock.git"
+    "url": "git+https://github.com/njaneambrose/AnalogClock.git"
   },
   "bugs": {
     "url": "http://github.com/njaneambrose/AnalogClock/issues"
-  },    
+  },
   "license": "MIT",
-    "dependencies":{
-        "jquery": ">= 1.9.0"
-    },
-    "files":[
-        "AnalogClock",
-        "external",
-        "Readme.txt",
-        "VisualTests.html"
-    ]
- }
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "files": [
+    "AnalogClock",
+    "external",
+    "Readme.txt",
+    "VisualTests.html"
+  ],
+  "main": "analogclock.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "VisualTests.html"
+  }
+}
