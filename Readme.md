@@ -31,7 +31,7 @@ A simple walkthrough of the options
 
  4 <b>extended</b> if you use extend watch configure the watch style from here : 
  
-```json 
+``` 
   {
     x_size: 'normal'/'large', // sets the size of the watch
     inner_minor: true || false, // removes the small sticks that represent minutes
@@ -51,7 +51,7 @@ A simple walkthrough of the options
  
 Below are the defaults: 
 
-```json
+```
 {
   watch: 'medium',
   minor: true, 
