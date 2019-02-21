@@ -31,13 +31,14 @@ A simple walkthrough of the options
 
  4 <b>extended</b> if you use extend watch configure the watch style from here : 
  
-      {
-        x_size: 'normal'/'large' -> sets the size of the watch
-        inner_minor: true/false -> removes the small sticks that represent minutes
-        inner_major: true/false -> removes the major sticks (affects sticks only)
-        inner_major_type: 'sticks'/'number' -> choose one of the two
-      }
- 
+```json 
+  {
+    x_size: 'normal'/'large', // sets the size of the watch
+    inner_minor: true || false, // removes the small sticks that represent minutes
+    inner_major: true || false, // removes the major sticks (affects sticks only)
+    inner_major_type: 'sticks' || 'number' // choose one of the two
+  }
+ ```
  5: <b>effect</b>: 'tick'/'flow' -> flow(continuous + runs on high CPU utilization)
  
  6: <b>logo</b>: true/false
@@ -49,43 +50,48 @@ A simple walkthrough of the options
  9: <b>GMT_offset</b>: if GMT is true input the gmt offset of the time in the other location you want to use
  
 Below are the defaults: 
- 
-     {
-      watch: 'medium',
-      minor: true, 
-      major: true, 
-      effect: 'tick',
-      logo: false, 
-      logo_text: 'name',
-      GMT: false,
-      GMT_offset: 0,
-      extended:{
-       inner_minor: true,
-       inner_major: true,
-       inner_major_type: 'sticks'
-        }
-      }
+
+```json
+{
+  watch: 'medium',
+  minor: true, 
+  major: true, 
+  effect: 'tick',
+  logo: false, 
+  logo_text: 'name',
+  GMT: false,
+  GMT_offset: 0,
+  extended:{
+   inner_minor: true,
+   inner_major: true,
+   inner_major_type: 'sticks'
+    }
+}
+```  
 Check an example [here](https://github.com/njaneambrose/AnalogClock/blob/master/VisualTests.html)
 
 If you use logo_text the logo may not be centrally placed, follow your watch branch in [tree.json](https://github.com/njaneambrose/AnalogClock/blob/master/tree.json) to see a way to edit it's position
 
 ## Example
-     <script src="jquery.js"></script>
-     <script src="analogclock.js"></script>
-     .......................
-     <body>
-       <div id="clock"></div> <!-- You want the clock to be palced here -->
-       ......................
-     </body>
-     <script>
-     $("#clock").analogClock({
-          watch: 'medium',
-          minor: true, 
-          major: true, 
-          effect: 'tick',
-          logo: true,
-          logo_text: 'My website name',
-          GMT: true,
-          GMT_offset: +3
-     });
-     </script>
+
+```html
+ <script src="jquery.js"></script>
+ <script src="analogclock.js"></script>
+ .......................
+ <body>
+   <div id="clock"></div> <!-- You want the clock to be palced here -->
+   ......................
+ </body>
+ <script>
+ $("#clock").analogClock({
+      watch: 'medium',
+      minor: true, 
+      major: true, 
+      effect: 'tick',
+      logo: true,
+      logo_text: 'My website name',
+      GMT: true,
+      GMT_offset: +3
+ });
+ </script>
+```
