@@ -1,7 +1,7 @@
 {
-  "name": "analogclock",
-  "description": "A simple plugin to develop analog watches for webpages",
-  "version": "1.0.0",
+  "name": "webclock",
+  "description": "A simple plug in to develop analog watches for web pages",
+  "version": "1.1.0",
   "keywords": [
     "analogClock",
     "anlogWatch",
@@ -28,7 +28,8 @@
     "AnalogClock",
     "external",
     "Readme.txt",
-    "VisualTests.html"
+    "VisualTests.html",
+	"lib"
   ],
   "main": "analogclock.js",
   "directories": {
